@@ -1,0 +1,15 @@
+[project]
+name = "tokuse"
+version = "0.1.0"
+description = "Local token usage for Cursor, Codex CLI, and Claude Code"
+requires-python = ">=3.11"
+
+[project.scripts]
+tokuse = "tokuse.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
